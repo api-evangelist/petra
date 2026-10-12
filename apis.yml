@@ -1,7 +1,6 @@
 aid: petra
 name: Petra
-description: 'Petra is a company surfaced via the API Evangelist harvest backlog (source: vc-portfolio;
-  backed by lemnos-labs) and added to the network as a stub for full-pipeline profiling.'
+description: 'Petra Security provides modern ITDR (Identity Threat Detection and Response) solutions, helping organizations detect, investigate, and remediate security incidents across email, documents, and user accounts. Their platform offers real‑time alerts, automated response playbooks, and detailed forensic data, catering to MSPs, resellers, and internal security teams. Founded with backing from Lemnos Labs, Petra aims to simplify complex security operations and improve overall threat visibility for enterprises.'
 url: https://raw.githubusercontent.com/api-evangelist/petra/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:vc-portfolio
@@ -12,6 +11,10 @@ created: '2026-10-12'
 modified: '2026-10-12'
 tags:
 - Company
+- Security
+- ITDR
+- SaaS
+- ThreatDetection
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +24,7 @@ maintainers:
 x-backed-by:
 - lemnos-labs
 common:
+- type: DomainSecurity
+  url: security/petra-domain-security.yml
 - type: Website
-  url: https://petra.cc
+  url: https://www.petrasecurity.com
