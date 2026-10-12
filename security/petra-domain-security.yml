@@ -8,6 +8,12 @@ hosts:
   cert_expires: Dec  2 23:59:59 2026 GMT
   hsts: true
   hsts_max_age: 63072000
+- host: api.petrasecurity.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Mar 31 23:59:59 2027 GMT
+  hsts: true
+  hsts_max_age: 15552000
 domains:
 - domain: petrasecurity.com
   dnssec: true

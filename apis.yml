@@ -1,11 +1,15 @@
 aid: petra
 name: Petra
-description: 'Petra Security provides modern ITDR (Identity Threat Detection and Response) solutions, helping organizations detect, investigate, and remediate security incidents across email, documents, and user accounts. Their platform offers real‑time alerts, automated response playbooks, and detailed forensic data, catering to MSPs, resellers, and internal security teams. Founded with backing from Lemnos Labs, Petra aims to simplify complex security operations and improve overall threat visibility for enterprises.'
+image: https://www.petrasecurity.com/opengraph-image?c5d151ee11ca9e2c
+description: Petra Security provides modern ITDR (Identity Threat Detection and Response) solutions, helping organizations detect, investigate,
+  and remediate security incidents across email, documents, and user accounts. Their platform offers real‑time alerts, automated response playbooks,
+  and detailed forensic data, catering to MSPs, resellers, and internal security teams. Founded with backing from Lemnos Labs, Petra aims to simplify
+  complex security operations and improve overall threat visibility for enterprises.
 url: https://raw.githubusercontent.com/api-evangelist/petra/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:vc-portfolio
-x-tier: stub
-x-tier-reason: harvest
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-12 (modular-v1; was harvest)
 specificationVersion: '0.20'
 created: '2026-10-12'
 modified: '2026-10-12'
@@ -15,16 +19,61 @@ tags:
 - ITDR
 - SaaS
 - ThreatDetection
-apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
-x-backed-by:
-- lemnos-labs
 common:
+- type: ChangeLog
+  url: changelog/petra-changelog.yml
+- type: Authentication
+  url: authentication/petra-authentication.yml
+- type: Conformance
+  url: conformance/petra-conformance.yml
+- type: LLMsTxt
+  url: llms/petra-llms.txt
+- type: AgentCard
+  url: a2a/petra-a2a.yml
+- type: Hosts
+  url: hosts/petra-hosts.yml
+- type: Vendors
+  url: vendors/petra-vendors.yml
+- type: Support
+  url: https://support.petrasecurity.com/
+- type: PrivacyPolicy
+  url: https://www.petrasecurity.com/privacy
+- type: Documentation
+  url: https://docs.petrasecurity.com/
+- type: APIReference
+  url: https://www.petrasecurity.com/docs/changelog
 - type: DomainSecurity
   url: security/petra-domain-security.yml
 - type: Website
   url: https://www.petrasecurity.com
+apis:
+- name: Petra Security API
+  description: Programmatic access to Petra Security data and functionality.
+  humanURL: https://www.petrasecurity.com/docs/api-reference/introduction
+  baseURL: https://api.petrasecurity.com
+  aid: petra:petra-security-api
+x-backed-by:
+- lemnos-labs
+x-coverage:
+  state: none
+  reason: no-developer-program
+  method: derived
+  generated: '2026-10-12'
+  generator: derive-coverage.py (pre-flight evidence)
+  detail: the company publishes no developer documentation host and no machine-readable contract on its own domain
+  evidence:
+  - url: https://support.petrasecurity.com/mcp
+    status: 403
+  - url: https://www.petrasecurity.com
+    status: 200
+x-enrichment:
+  date: '2026-10-12'
+  status: enriched
+  artifacts_added: 11
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

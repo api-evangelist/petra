@@ -1,0 +1,17 @@
+generated: '2026-10-12'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://www.petrasecurity.com/docs/api-reference/authentication
+sources:
+- https://www.petrasecurity.com/docs/api-reference/authentication
+description: The Petra Security API uses Bearer token authentication. Every request to the API must include a valid API key in the Authorization
+  header.
+schemes:
+- type: http-bearer
+  name: Bearer
+  evidence: The Petra Security API uses Bearer token authentication. Every request to the API must include a valid API key in the Authorization
+    header.
+  location: header
+  header: Authorization
+  how_to_obtain: API keys are managed in Settings → API Keys. Admins can create keys via the app.petrasecurity.com UI.
+docs: https://www.petrasecurity.com/docs/api-reference/authentication

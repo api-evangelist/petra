@@ -1,0 +1,92 @@
+generated: '2026-10-12'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 5
+  own: 5
+  other_domain: 0
+  platform: 0
+  roles:
+  - api
+  - docs
+  - other
+  - support
+  - website
+hosts:
+- host: api.petrasecurity.com
+  found_by:
+  - apis[]
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types: []
+  serves:
+  - api
+  registrable_domain: petrasecurity.com
+  role: api
+  relation: own
+- host: app.petrasecurity.com
+  found_by:
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: petrasecurity.com
+  role: other
+  relation: own
+- host: docs.petrasecurity.com
+  found_by:
+  - pointer
+  - probed
+  - site-links
+  - namespace-probe
+  - contract-discovery
+  - well-known
+  types:
+  - Documentation
+  serves: []
+  title: Welcome to Petra Security - Petra Security Docs
+  status: 200
+  registrable_domain: petrasecurity.com
+  role: docs
+  relation: own
+- host: support.petrasecurity.com
+  found_by:
+  - pointer
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types:
+  - Support
+  serves: []
+  registrable_domain: petrasecurity.com
+  role: support
+  relation: own
+- host: www.petrasecurity.com
+  found_by:
+  - pointer
+  - apis[]
+  - probed
+  - docs-index
+  - spec-found
+  - contract-discovery
+  - well-known
+  - vendor-detect
+  types:
+  - PrivacyPolicy
+  - APIReference
+  - Website
+  serves:
+  - docs
+  - spec
+  - cdn
+  - hosting
+  vendor: cloudfront
+  registrable_domain: petrasecurity.com
+  role: website
+  relation: own

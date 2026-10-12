@@ -1,0 +1,83 @@
+# Petra Security
+
+> Petra Security is an identity threat detection and response (ITDR) platform for Microsoft 365. It detects, contains, investigates, and reports every M365 identity attack — BECs, token theft, device code phishing — with behavioral detection, a 24/7 US-based SOC, and insurance-grade forensic reports delivered in 48 hours.
+
+The canonical site is https://www.petrasecurity.com. Product documentation lives under https://www.petrasecurity.com/docs and publishes its own index at https://www.petrasecurity.com/docs/llms.txt.
+
+## Product
+
+- [Home](https://www.petrasecurity.com): Petra detects and stops BECs, token theft, and other Microsoft 365 identity attacks.
+- [Try Petra](https://www.petrasecurity.com/try-petra): Petra catches more M365 attacks, faster, through behavioral detection built for modern threats. Start a free 14-day POC.
+- [Petra Scan](https://www.petrasecurity.com/scan): A free scan of your M365 environment, deployed in two clicks — full forensics for a BEC in 48 hours.
+- [Start your Petra Scan](https://www.petrasecurity.com/start-scan): Sign up for a Petra Scan: insurance-grade forensics for the last 6 months of your M365 logs, including past and active attacks, in 48 hours.
+
+## Audiences
+
+- [For MSPs](https://www.petrasecurity.com/msps): MSPs choose Petra for next-generation detection across every client tenant, end-to-end remediation that saves hours every week, and insurance-grade reports.
+- [For IT Teams](https://www.petrasecurity.com/it-teams): Petra catches identity attacks across your M365 environment in seconds, with insurance-grade reports for your CISO and board ready in 48 hours.
+- [For Incident Response](https://www.petrasecurity.com/incident-response): Petra traces every M365 attack from root cause to resolution and produces a complete forensic report with the full attacker timeline.
+- [For Resellers](https://www.petrasecurity.com/resellers): Resellers choose Petra for behavioral ITDR, with rapid time-to-value and partner enablement built in.
+
+## Comparisons
+
+- [Petra vs Huntress](https://www.petrasecurity.com/petra-vs-huntress): How Petra compares to Huntress ITDR — behavioral detection, full remediation, and forensics that catch more attacks, faster.
+- [Petra vs Blackpoint](https://www.petrasecurity.com/petra-vs-blackpoint): How Petra compares to Blackpoint — catch attacks faster with 5-20x fewer false positives and automated forensics.
+- [Petra vs SaaS Alerts](https://www.petrasecurity.com/petra-vs-saas-alerts): How Petra compares to SaaS Alerts — purpose-built ITDR with behavioral detection, 24/7 SOC response, and full remediation out of the box.
+
+## Research
+
+- [Research](https://www.petrasecurity.com/research): Deep dives on Microsoft 365 attacker behavior and how to detect Microsoft account compromises, from the team at Petra Security.
+- [Malicious Inactivity](https://www.petrasecurity.com/research/malicious-inactivity): A quiet account after a suspicious login is not an all clear. (September 21, 2026)
+- [When Axios is Innocent](https://www.petrasecurity.com/research/when-axios-is-innocent): Even the most suspicious signals can sometimes be benign. (September 1, 2026)
+- [When Are Legitimate Apps Actually Malicious?](https://www.petrasecurity.com/research/when-are-legitimate-apps-actually-malicious): Uncovering malicious app registration using behavioral analysis. (August 7, 2026)
+- [Stop Attacks Before Damage](https://www.petrasecurity.com/research/stop-attacks-before-damage): Automated toolkits inflict damage within minutes of access. The challenge has shifted from simply catching attacks to stopping them before damage is inflicted. (July 13, 2026)
+- [Device Code Phishing, Part 2: What Attackers Do After They Get In](https://www.petrasecurity.com/research/device-code-phishing-part-2): The login looks clean. The damage happens after, on a session Microsoft already trusts. (June 18, 2026)
+- [Device Code Phishing, Part 1: How the Attackers Get In](https://www.petrasecurity.com/research/device-code-phishing-part-1): A new phishing technique is breaking the assumption that a clean session stays clean. (April 30, 2026)
+- [How Residential Proxy Attacks Defeat Location-Based Detection in Microsoft 365](https://www.petrasecurity.com/research/residential-proxies): Why logins alone aren't enough to catch these attackers anymore (April 24, 2026)
+- [When Attackers Modify Your Mail Flow](https://www.petrasecurity.com/research/when-attackers-modify-your-mail-flow): How attackers abuse inbound connectors for persistence and internal phishing in M365 (March 3, 2026)
+- [How Your Client Got an Email from Themself](https://www.petrasecurity.com/research/direct-send): How attackers abuse Microsoft 365 Direct Send to deliver phishing emails and steal credentials (February 24, 2026)
+- [New Password Spray Campaign Using Residential Proxies](https://www.petrasecurity.com/research/new-password-spray-campaign): A stealthy password spray campaign is using Virginia-based residential proxies. Here's what we're seeing and how to block it. (July 21, 2025)
+- [Why Travel Allowlists Cause More Pain Than Protection](https://www.petrasecurity.com/research/why-travel-allowlists-cause-more-pain-than-protection): "Only allow log-ins from known places" sounds great, but falls apart in practice. (June 29, 2025)
+- [BECs Don't Always Target Your Emails](https://www.petrasecurity.com/research/becs-dont-always-target-your-emails): SharePoint is often the real target in business "email" compromises. (June 16, 2025)
+- [Corporate Espionage in the Cloud](https://www.petrasecurity.com/research/corporate-espionage-in-the-cloud): The quiet side of BEC: how attackers exfiltrate data without leaving a trace. (June 7, 2025)
+- [When A Tesla Looks Like an Attacker](https://www.petrasecurity.com/research/when-a-tesla-looks-like-an-attacker): A case study in why anomaly detection isn't enough. (May 31, 2025)
+- [How Attackers Launder Phishing Emails Through Microsoft Infrastructure](https://www.petrasecurity.com/research/how-attackers-launder-phishing-emails): Attackers often use hacked accounts to "OneDrive Phish" other companies. This allows them to launder their phishing emails through Microsoft infrastructure. So, how can we detect and stop them? (May 20, 2025)
+- [How "Many Failed Login" Alerts Can Bury the Signal That Matters](https://www.petrasecurity.com/research/failed-login-alerts-can-bury-the-signal): A case study in how alerting on noise can cause you to miss the real attack. (May 9, 2025)
+- [New Data Center Observed in Widespread AitM Attack Campaign](https://www.petrasecurity.com/research/new-data-center-observed-in-widespread-aitm-attack-campaign): A data center in Tampa is the backbone of a new wave of AitM phishing campaigns we've observed. Here's what you need to know and how to block it. (May 3, 2025)
+- [Compromised, then Weaponized: Anatomy of a OneDrive Phishing Campaign](https://www.petrasecurity.com/research/anatomy-of-a-onedrive-phishing-campaign): Mid-tax-season, an attacker quietly took over a CPA firm's account—then used it to launch a OneDrive phishing campaign. Here's how they set it up, frame by frame, in the SharePoint logs. (April 24, 2025)
+- [That Android 6 Login? It Was Actually Windows 10.](https://www.petrasecurity.com/research/it-was-actually-windows-10): Why anomalous user agent strings can be misleading (April 15, 2025)
+- [Why Does Teams Activity Appear in SharePoint Logs? And Why Does This Matter to Attackers?](https://www.petrasecurity.com/research/why-does-teams-activity-appear-in-sharepoint-logs): Attachments in Teams chats use OneDrive under the hood, so they actually appear in SharePoint logs. Plus: why this matters for attackers disguising their actions. (April 4, 2025)
+- [Unmasking A Slow and Steady Password Spray Attack](https://www.petrasecurity.com/research/unmasking-a-slow-and-steady-password-spray-attack): Catching an attacker hiding in plain sight with some creative log slicing (March 28, 2025)
+- [What's up with all that Impossible Travel in SharePoint?](https://www.petrasecurity.com/research/that-impossible-travel-in-sharepoint): Differentiating between real IPs and Microsoft datacenters in SharePoint logs. Hugely important for incident investigations. (March 21, 2025)
+- [An Easy Conditional Access Policy to Block Lots of AitM Attacks](https://www.petrasecurity.com/research/an-easy-conditional-access-policy-to-block-lots-of-aitm-attacks): We see a lot of attacker-in-the-middle attacks here at Petra. Here's a policy you can use that will block a whole lot of them in your tenant in 5 minutes. (March 17, 2025)
+- [Multi-Stream Tracking an AitM Attack: From Lure to Lockout](https://www.petrasecurity.com/research/multi-stream-tracking-an-aitm-attack-from-lure-to-lockout): Catching an attacker red-handed across event streams — from a OneDrive phishing lure to an automated AitM toolkit in action. (March 11, 2025)
+- [Microsoft Logs Missing for Hours After Attack](https://www.petrasecurity.com/research/microsoft-logs-missing-for-hours-after-attack): Detecting a compromise minutes after it happened without a complete record of how the attacker got in. (March 4, 2025)
+- [Microsoft Misses Impossible Travel in Email Activity](https://www.petrasecurity.com/research/microsoft-misses-impossible-travel-in-email-activity): How an attacker accessed a US account from Turkey without triggering Microsoft alerts. (February 24, 2025)
+- [How Did Singapore Bypass Your US-Only Conditional Access?](https://www.petrasecurity.com/research/how-did-singapore-bypass-your-us-only-conditional-access): When Microsoft's faulty geolocation makes your security controls fail silently (February 18, 2025)
+- [Spelunking in the Microsoft API, Part II: The Truth About Risky Sign-in Alerts](https://www.petrasecurity.com/research/the-truth-about-risky-sign-in-alerts): How accurate are Microsoft's native security signals? (Not very.) (December 20, 2024)
+- [Spelunking in the Microsoft API, Part I: Entra ID Latency](https://www.petrasecurity.com/research/entra-id-latency): Measuring how long Microsoft really takes to surface login events—and why the long tail matters for detection. (December 9, 2024)
+- [Anatomy of a Sophisticated Multi-Infrastructure Password Spray Campaign](https://www.petrasecurity.com/research/multi-infrastructure-password-spray-campaign): How a low-and-slow attacker rotated across Russian and Vietnamese infrastructure to slip past traditional brute force detection. (November 23, 2024)
+
+## Case studies
+
+- [Case studies](https://www.petrasecurity.com/case-studies): Real stories from MSPs and MSSPs who replaced their old ITDR, recovered help-desk hours, and grew their business with Petra.
+- [How M-Cubed Stopped 7 Attackers Missed By Huntress ITDR](https://www.petrasecurity.com/case-study/how-m-cubed-stopped-7-attackers-missed-by-huntress-itdr): Customer case study.
+- [How Compu-SOLVE Caught 4 Residential Proxy Attacks Huntress ITDR Missed](https://www.petrasecurity.com/case-study/c-solve-residential-proxy): Customer case study.
+- [How Impact Business Technology Uses Petra Scan to Win New Clients](https://www.petrasecurity.com/case-study/impact-business-technology): Customer case study.
+- [Why Hansen Gress Replaced Two ITDRs with Petra](https://www.petrasecurity.com/case-study/hansen-gress): Customer case study.
+- [How Always Beyond Caught a 6-Month Residential Proxy Attack Their Prior ITDR Missed](https://www.petrasecurity.com/case-study/always-beyond): Customer case study.
+- [How a Fast-Growing Australian MSP Transformed its Cyber Response Operations with Petra](https://www.petrasecurity.com/case-study/ever-nimble-case-study): Customer case study.
+- [Why FutureSafe Made Petra Its Front Line for M365 BEC Protection](https://www.petrasecurity.com/case-study/futuresafe): Customer case study.
+- [How The AME Group Wins with Petra](https://www.petrasecurity.com/case-study/how-the-ame-group-wins-with-petra): Customer case study.
+- [How BNMC (A New Charter Company) Used Petra to Stop a CEO Attack Missed By SaaS Alerts](https://www.petrasecurity.com/case-study/how-bnmc-a-new-charter-company-used-petra-to-stop-a-ceo-attack-missed-by-prior-itdr): Customer case study.
+- [How CyberStreams Made Cyber Their Competitive Differentiator with Petra](https://www.petrasecurity.com/case-study/how-cyberstreams-made-cyber-their-competitive-differentiator-with-petra): Customer case study.
+- [How J&B Technologies Found a Live Compromise Missed by a Competing ITDR](https://www.petrasecurity.com/case-study/jb-technologies-case-study): Customer case study.
+- [How AlignLayerNine Took Reporting from Hours → Minutes with Petra](https://www.petrasecurity.com/case-study/alignlayernine): Customer case study.
+- [How IntrusionOps Landed 3 Enterprise Deals With Petra](https://www.petrasecurity.com/case-study/how-intrusionops-landed-3-enterprise-deals-with-petra): Customer case study.
+- [How Solvere One Closed the BEC Gap that Email Security and MDR Leave Open](https://www.petrasecurity.com/case-study/solvere-one): Customer case study.
+- [How ElasticIT Relies on Petra’s Advanced Detection Models to Protect Its Clients](https://www.petrasecurity.com/case-study/elasticit): Customer case study.
+
+## Documentation
+
+- [Petra Docs](https://www.petrasecurity.com/docs): Setup, tenant onboarding, integrations, and day-to-day product documentation.
+- [Docs llms.txt](https://www.petrasecurity.com/docs/llms.txt): The docs subtree's own llms.txt index.

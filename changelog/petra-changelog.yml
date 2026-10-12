@@ -1,0 +1,81 @@
+generated: '2026-10-12'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://www.petrasecurity.com/docs/changelog
+sources:
+- https://www.petrasecurity.com/docs/changelog
+entries:
+- breaking: false
+  highlights:
+  - Overlay Real User Activity
+  - Our Incident Timeline already shows every action an attacker took during a compromise.
+  - Now, you can also see the real user’s activity in the same view to get the full context.
+  date: '2026-10-09'
+- breaking: false
+  highlights:
+  - Email Folder Synced Tag
+  - In Petra Scan results, we sometimes see that an attacker synced an entire email folder.
+  - The new Email Folder Synced tag now highlights this in the portal and the Incident Report.
+  date: '2026-10-02'
+- breaking: false
+  highlights:
+  - View All Devices
+  - Petra already flags malicious registered devices during a compromise.
+  - Now, you can also view a tenant’s registered devices in Petra anytime.
+  date: '2026-09-25'
+- breaking: false
+  highlights:
+  - Conditional Access Policy Report
+  - This week we shipped a whitelabeled Conditional Access Policy Report.
+  - Use this to demonstrate the value of an active policy or the potential protection of a new policy.
+  date: '2026-09-18'
+- breaking: false
+  highlights:
+  - Get Posture Reports Data in the API
+  - This week we shipped a new API endpoint to get your tenants’ Posture Reports data.
+  - You can grab an API key in Settings -> API.
+  date: '2026-09-11'
+- breaking: false
+  highlights:
+  - Phishing Email in the API
+  - Our incidents API now includes the phishing email’s metadata such as its subject, sender, and Internet Message ID.
+  - You can use this data in your internal tooling and data visualizations.
+  date: '2026-09-04'
+- breaking: false
+  highlights:
+  - Proactive Phishing Email Removal
+  - Now when you use the Cross-tenant Phish Removal feature in Petra, you can generate a whitelabeled PDF report of the threat you handled for
+    your clients.
+  date: '2026-08-28'
+- breaking: false
+  highlights:
+  - Remediate Inbound Connectors
+  - You can now remediate malicious inbound connectors directly from Petra when surfaced by a Scan.
+  - If Petra Response is enabled, our SOC takes this action on your behalf.
+  date: '2026-08-21'
+- breaking: false
+  highlights:
+  - Review MFA Methods Registered During an Incident
+  - You can now review the MFA methods registered during an incident and remove them from Petra.
+  - Note that Scans of past compromises cannot distinguish which MFA methods were present before the compromise.
+  date: '2026-08-14'
+- breaking: false
+  highlights:
+  - Recover Attacker-Deleted Emails
+  - You can now recover attacker-deleted emails from the incident page.
+  - The emails return back to the folder they were deleted from.
+  date: '2026-08-07'
+- breaking: false
+  highlights:
+  - Restore a Conditional Access Policy
+  - You can now manually restore a previous version of a Conditional Access Policy through Petra.
+  - This opens a preview of the changes and gives options to roll out the Policy as Report-only or Enabled.
+  date: '2026-07-31'
+- breaking: false
+  highlights:
+  - Petra Posture Report
+  - This week we shipped a new Posture Report.
+  - The report compares a tenant’s configuration to best practices and highlights opportunities to improve the tenant’s security.
+  date: '2026-07-24'
+note: The page lists changelog entries by date but does not provide explicit version numbers or a versioning scheme.
+docs: https://www.petrasecurity.com/docs/changelog
