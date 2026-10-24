@@ -13,7 +13,17 @@ x-tier-reason: enrichment pass 2026-10-12 (modular-v1; was harvest)
 specificationVersion: '0.20'
 created: '2026-10-12'
 modified: '2026-10-12'
+x-docs-platform: mintlify
+x-docs-platform-confidence: medium
+x-docs-platform-checked: 2026-10-17
+x-docs-hosting: aws-cloudfront
 tags:
+- Company
+- Security
+- ITDR
+- Software-as-a-Service
+- Threat Detection
+tags_raw:
 - Company
 - Security
 - ITDR
