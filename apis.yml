@@ -67,6 +67,46 @@ apis:
   humanURL: https://www.petrasecurity.com/docs/api-reference/introduction
   baseURL: https://api.petrasecurity.com
   aid: petra:petra-security-api
+- aid: petra:petra-billable-users-api
+  name: Petra Billable Users API
+  description: The Billable Users API from Petra — 1 operation(s) for billable users.
+  humanURL: https://www.petrasecurity.com/docs/api-reference/introduction
+  baseURL: https://api.petrasecurity.com
+  tags:
+  - Billable Users
+  properties:
+  - type: OpenAPI
+    url: openapi/petra-billable-users-api-openapi.yml
+- aid: petra:petra-tenants-api
+  name: Petra Tenants API
+  description: The Tenants API from Petra — 1 operation(s) for tenants.
+  humanURL: https://www.petrasecurity.com/docs/api-reference/introduction
+  baseURL: https://api.petrasecurity.com
+  tags:
+  - Tenants
+  properties:
+  - type: OpenAPI
+    url: openapi/petra-tenants-api-openapi.yml
+- aid: petra:petra-usage-api
+  name: Petra Usage API
+  description: The Usage API from Petra — 1 operation(s) for usage.
+  humanURL: https://www.petrasecurity.com/docs/api-reference/introduction
+  baseURL: https://api.petrasecurity.com
+  tags:
+  - Usage
+  properties:
+  - type: OpenAPI
+    url: openapi/petra-usage-api-openapi.yml
+- aid: petra:petra-usage-xlsx-api
+  name: Petra Usage Xlsx API
+  description: The Usage Xlsx API from Petra — 1 operation(s) for usage xlsx.
+  humanURL: https://www.petrasecurity.com/docs/api-reference/introduction
+  baseURL: https://api.petrasecurity.com
+  tags:
+  - Usage Xlsx
+  properties:
+  - type: OpenAPI
+    url: openapi/petra-usage-xlsx-api-openapi.yml
 x-backed-by:
 - lemnos-labs
 x-coverage:

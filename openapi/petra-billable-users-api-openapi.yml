@@ -1,0 +1,67 @@
+openapi: 3.2.0
+info:
+  title: Petra Security Billable Users API
+  description: The Petra Security API provides programmatic access to security data and functionality within your Petra portal.
+  version: 1.0.0
+  contact:
+    name: Petra Security Support
+    email: support@petrasecurity.com
+servers:
+- url: https://api.petrasecurity.com
+  description: Production server
+security:
+- bearerAuth: []
+tags:
+- name: Billable Users
+paths:
+  /v1/billable-users:
+    get:
+      summary: Get billable users
+      description: Retrieve the list of billable users for a specific Petra tenant. A user is considered billable if they have non-empty assignedLicenseSkuIds and not deleted.
+      operationId: getBillableUsers
+      parameters:
+      - name: tenantId
+        in: query
+        required: true
+        description: The Petra tenant ID.
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BillableUsersResponse'
+        '401':
+          description: Unauthorized - Invalid or missing API key
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '403':
+          description: Forbidden - Tenant does not belong to your organization
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '429':
+          description: Too Many Requests - Rate limit exceeded
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '500':
+          description: Internal Server Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+      security:
+      - bearerAuth: []
+      tags:
+      - Billable Users
+components:
+  schemas:
+    ErrorResponse: {}
+    BillableUsersResponse: {}

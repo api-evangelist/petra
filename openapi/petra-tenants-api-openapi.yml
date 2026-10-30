@@ -1,0 +1,42 @@
+openapi: 3.2.0
+info:
+  title: Petra Security Tenants API
+  description: The Petra Security API provides programmatic access to security data and functionality within your Petra portal.
+  version: 1.0.0
+  contact:
+    name: Petra Security Support
+    email: support@petrasecurity.com
+servers:
+- url: https://api.petrasecurity.com
+  description: Production server
+security:
+- bearerAuth: []
+tags:
+- name: Tenants
+paths:
+  /v1/tenants:
+    get:
+      summary: Get tenants
+      description: List the Petra tenants in your organization.
+      operationId: getTenants
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GetTenantsResponse'
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+      security:
+      - bearerAuth: []
+      tags:
+      - Tenants
+components:
+  schemas:
+    ErrorResponse: {}
+    GetTenantsResponse: {}

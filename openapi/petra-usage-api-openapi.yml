@@ -1,0 +1,62 @@
+openapi: 3.2.0
+info:
+  title: Petra Security Usage API
+  description: The Petra Security API provides programmatic access to security data and functionality within your Petra portal.
+  version: 1.0.0
+  contact:
+    name: Petra Security Support
+    email: support@petrasecurity.com
+servers:
+- url: https://api.petrasecurity.com
+  description: Production server
+security:
+- bearerAuth: []
+tags:
+- name: Usage
+paths:
+  /v1/usage:
+    get:
+      summary: Get tenant usage
+      description: Retrieve tenant usage stats, including billable date range and number of licensed users.
+      operationId: getUsage
+      parameters:
+      - name: asOf
+        in: query
+        required: false
+        description: Date in ISO format (YYYY-MM-DD) to get usage data for. Defaults to current date if not provided.
+        schema:
+          type: string
+          format: date
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UsageResponse'
+        '401':
+          description: Unauthorized - Invalid or missing API key
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '429':
+          description: Too Many Requests - Rate limit exceeded for this route
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '500':
+          description: Internal Server Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+      security:
+      - bearerAuth: []
+      tags:
+      - Usage
+components:
+  schemas:
+    ErrorResponse: {}
+    UsageResponse: {}

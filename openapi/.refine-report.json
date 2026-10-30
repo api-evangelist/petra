@@ -1,0 +1,30 @@
+{
+  "provider": "petra",
+  "sources": [
+    "petra-openapi.json"
+  ],
+  "outputs": [
+    "petra-billable-users-api-openapi.yml",
+    "petra-tenants-api-openapi.yml",
+    "petra-usage-api-openapi.yml",
+    "petra-usage-xlsx-api-openapi.yml"
+  ],
+  "archived": [
+    "archived openapi/petra-openapi.json"
+  ],
+  "errors": [],
+  "warnings": [],
+  "notes": [
+    "petra-openapi.json: upgraded openapi 3.0.3 -> OpenAPI 3.2.0",
+    "petra-openapi.json: tagged paths GET /v1/usage -> Usage",
+    "petra-openapi.json: tagged paths GET /v1/usage-xlsx -> Usage Xlsx",
+    "petra-openapi.json: tagged paths GET /v1/billable-users -> Billable Users",
+    "petra-openapi.json: tagged paths GET /v1/tenants -> Tenants",
+    "petra-openapi.json: declared missing tag: Billable Users",
+    "petra-openapi.json: declared missing tag: Tenants",
+    "petra-openapi.json: declared missing tag: Usage",
+    "petra-openapi.json: declared missing tag: Usage Xlsx",
+    "apis.yml register: written (+4 apis, 5 total)"
+  ],
+  "skipped": []
+}
