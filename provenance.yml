@@ -23,7 +23,7 @@ artifacts:
   kin/checks-2026-10-23T222754.yml:
     method: generated
     evidence: Kin Score snapshot written by score.rb
-  kin/checks-2026-10-31T095417.yml:
+  kin/checks-2026-11-02T082323.yml:
     method: generated
     evidence: Kin Score snapshot written by score.rb
   kin/score-2026-10-17T145100.yml:
@@ -47,6 +47,15 @@ artifacts:
   kin/score-2026-10-31T095417.yml:
     method: generated
     evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-11-01T171331.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-11-01T200237.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-11-02T082323.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
   llms/petra-llms-provenance.yml:
     method: searched
     evidence: 'derive-llms-provenance.py: harvested'
@@ -60,21 +69,15 @@ artifacts:
     method: harvested
     evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
       to the provider's source is unverified
-  openapi/petra-billable-users-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
   openapi/petra-openapi.json:
     method: derived
     evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/petra-tenants-api-openapi.yml:
+  patterns/petra-patterns.yml:
     method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/petra-usage-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/petra-usage-xlsx-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
+    evidence: declared in the artifact
+  rules/petra-rules.yml:
+    method: generated
+    evidence: declared in the artifact
   security/petra-domain-security.yml:
     method: unknown
     evidence: no authorship recorded
